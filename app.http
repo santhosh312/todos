@@ -1,1 +1,21 @@
-http://localhost:3000/todos/?category=LEARNING&status=DONE
+http://localhost:3000/todos/
+
+###
+
+POST http://localhost:3000/todos/ HTTP/1.1
+content-type: application/json
+
+{
+    "id":12,
+    "status":"DONE",
+    "category":"WORK",
+    "priority":"HIGH",
+    "todo":"Complete the Assignment",
+    "dueDate":"2022-02-08"
+
+}
+
+
+###
+
+http://localhost:3000/agenda/?date=2020-09-22
